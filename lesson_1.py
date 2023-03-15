@@ -1,6 +1,3 @@
-sec = int(input("Введите время в секундах"))
-
-
 def what_time(sec):
     import datetime
     hours = sec // 3600
@@ -12,3 +9,7 @@ def what_time(sec):
         minutes = 0
     result_time = datetime.time(hours, minutes, seconds)
     return f"Введенное время: {result_time}"
+
+
+user_seconds = int(input("Введите время в секундах: "))
+print(what_time(user_seconds))
